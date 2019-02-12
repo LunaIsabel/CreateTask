@@ -1,0 +1,14 @@
+Plot:
+  
+
+
+
+
+
+
+Characters(4 + char):
+char: male or female
+Kevin = 22
+Tori = 19
+Koen = 20
+Tyree = 18

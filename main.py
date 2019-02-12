@@ -12,3 +12,7 @@ def endings():
     ending_list = [ending1, ending2, ending3]
     chosen_ending = random.choice(ending_list)
     print(chosen_ending)
+
+def start():
+    
+    left_or_right = input('right or left? ')
