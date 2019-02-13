@@ -14,5 +14,8 @@ def endings():
     print(chosen_ending)
 
 def start():
-    
+    start1 = ('''
+You wake up in a forest 
+
+              ''')
     left_or_right = input('right or left? ')

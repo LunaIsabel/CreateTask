@@ -16,7 +16,13 @@ Story line:
   one faction.
   -If protagonist is in the lake he can convince the man to take them somewhere safe but if they're in the town they can choose to leave (protagonist chooses who to follow) or stay.
   The small town however is really somber and shady. Tori and kevin say they should leave while Koen and Tyree say they should stay.
-  -If protagonist decides to 
+  -If protagonist decides to leave with Tori and Kevin they go to the kingdom and join the league which promises to help them get back home (or if they can't they'll be citizens in
+  that kingdom) however if the protagonist decides to go with Koen and Tyree they'll fight with the mount.
+  -If protagonist fights with the league (Tori and Kevin) protagonist must perform a bunch of jobs and if he completes a good amount of them then he will end up being leader however if
+  they go with the mount they have to fight against Tori and the league. The protagonist must choose how to fight strategically or else they can die.
+  -If the protagonist makes a faulty move when fighting with the mount then they die, as well as fighting with the league. The protagonist if they're fighting with the league will go though a
+  house and if they look around enough they'll find a key to go back home. If they don't and they're fighting with the league (and win not die) they'll end up living a calm life (and if they
+  end up liking Tori they'll live with her). 
 
 
 
