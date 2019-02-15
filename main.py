@@ -3,6 +3,7 @@ __copyright__ = "Copyright (c) 2019 Isabel Luna"
 __credits__ = ["Luna, Isabel"]
 __license__ = "MIT lisence"
 
+# import for random story
 import random
 
 def endings():
@@ -13,9 +14,18 @@ def endings():
     chosen_ending = random.choice(ending_list)
     print(chosen_ending)
 
-def start():
-    start1 = ('''
-You wake up in a forest 
+def question_name():
+    print('What\'s your name?')
+    name = input(' ')
+    return name
 
-              ''')
-    left_or_right = input('right or left? ')
+def question_gender():
+    print('Are you female or male?')
+    gender = input('')
+    return gender
+
+def start_story(name, gender):
+    pass
+name = question_name()
+gender = question_gender();
+start_story(name, gender)
