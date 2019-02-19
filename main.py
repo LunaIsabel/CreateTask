@@ -24,8 +24,16 @@ def question_gender():
     gender = input('')
     return gender
 
-def start_story(name, gender):
-    pass
-name = question_name()
-gender = question_gender();
-start_story(name, gender)
+def story_male(name, gender):
+    print('Story if the person is male will go here')
+
+def story_female(name, gender):
+    print('Story if person is female will go here')
+
+if __name__ == '__main__':
+    name = question_name()
+    gender = question_gender();
+    if gender == 'male':
+        story_male()
+    else:
+        story_female()
