@@ -22,24 +22,18 @@ def question_name():
 def question_gender():
     print('Are you female or male?')
     gender = input('')
-    if gender == male or female:
-        start_story(name, gender)
-    else:
-        print('You must choose male or female')
     return gender
-
-def start_story(name, gender):
-    pass
-    if __name__ == '__main__':
-        name = question_name()
-        gender = question_gender();
-    if question_gender() == 'male':
-        story_male()
-    else:
-        story_female()
 
 def story_male(name, gender):
     print('Story if the person is male will go here')
 
 def story_female(name, gender):
     print('Story if person is female will go here')
+
+if __name__ == '__main__':
+    name = question_name()
+    gender = question_gender();
+    if gender == 'male':
+        story_male()
+    else:
+        story_female()
