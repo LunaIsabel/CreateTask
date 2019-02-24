@@ -1,0 +1,8 @@
+Create task story
+
+ending1 = 'You died'
+ending2 = 'You became the leader'
+ending3 = 'You saved people continued to live oridinary life'
+
+Plot: 
+
