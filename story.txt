@@ -22,7 +22,7 @@ Story line:
   they go with the mount they have to fight against Tori and the league. The protagonist must choose how to fight strategically or else they can die.
   -If the protagonist makes a faulty move when fighting with the mount then they die, as well as fighting with the league. The protagonist if they're fighting with the league will go though a
   house and if they look around enough they'll find a key to go back home. If they don't and they're fighting with the league (and win not die) they'll end up living a calm life (and if they
-  end up liking Tori they'll live with her). 
+  end up liking Tori they'll live with her).
 
 
 
@@ -30,7 +30,7 @@ Story line:
 
 
 Characters(4 + char):
-char: age TBD, gender TBD
+char: age 20, gender TBD
 Kevin = age 22, male
 Tori = age 19, female
 Koen = age 20, male
