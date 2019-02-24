@@ -3,11 +3,9 @@ __copyright__ = "Copyright (c) 2019 Isabel Luna"
 __credits__ = ["Luna, Isabel"]
 __license__ = "MIT lisence"
 
-# import for random story
-import random
-
 def endings():
     ending1 = 'You died'
+
     ending2 = 'You become hero'
     ending3 = 'Live ordinary life'
     ending_list = [ending1, ending2, ending3]
@@ -164,3 +162,7 @@ if __name__ == '__main__':
         story_male(name)
     else:
         story_female(name)
+
+    ending2 = 'You became the leader'
+    ending3 = 'You saved people continued to live oridinary life'
+
