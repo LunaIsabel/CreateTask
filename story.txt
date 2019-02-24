@@ -1,0 +1,37 @@
+Basic Plot:
+  Five people get transported into a magical world with dragons, dungeons, and magic. Among these people is the main protagonist
+  which will be the person playing the game. They will choose their age, gender and name. With the protagonist came 4 other people
+  Koen, Tori, Kevin and Tyree. These five people navigate their way through a world where a war between humans (the league) and elves (the mount) had just broken out and they each
+  must choose to join a side. The protagonist will be influenced by the others choices when choosing to join a side. If the protagonist
+  is a male then he will choose to fall in love with Tori however if the protagonist is a female then she must compete in an extreme love
+  triangle involving everyone (not really a triangle) and her friend Tori. Through this war the protagonist can rise and become a hero, not
+  choose a side and live an ordinary life or die in the process.
+
+Story line:
+  -All five of them wake up in an abandoned  house where they begin to argue (protagonist can choose to stop the argument or feed into it)
+  -They decide to gather supplies and walk around a huge forest that surrounds them. They are met with two paths (if protagonist stopped the argument
+  he can choose which one to lead them through, if not they won't trust him and they'll go to the other path)
+  -Two paths form, the one to the left leads to a large lake where a man sits on a boat and they can ask him for information, the path to the right
+  leads them to a small town which is governed by the league. From there they understand that they have no idea how to get home and decide it'd be best to stick with
+  one faction.
+  -If protagonist is in the lake he can convince the man to take them somewhere safe but if they're in the town they can choose to leave (protagonist chooses who to follow) or stay.
+  The small town however is really somber and shady. Tori and kevin say they should leave while Koen and Tyree say they should stay.
+  -If protagonist decides to leave with Tori and Kevin they go to the kingdom and join the league which promises to help them get back home (or if they can't they'll be citizens in
+  that kingdom) however if the protagonist decides to go with Koen and Tyree they'll fight with the mount.
+  -If protagonist fights with the league (Tori and Kevin) protagonist must perform a bunch of jobs and if he completes a good amount of them then he will end up being leader however if
+  they go with the mount they have to fight against Tori and the league. The protagonist must choose how to fight strategically or else they can die.
+  -If the protagonist makes a faulty move when fighting with the mount then they die, as well as fighting with the league. The protagonist if they're fighting with the league will go though a
+  house and if they look around enough they'll find a key to go back home. If they don't and they're fighting with the league (and win not die) they'll end up living a calm life (and if they
+  end up liking Tori they'll live with her). 
+
+
+
+
+
+
+Characters(4 + char):
+char: age TBD, gender TBD
+Kevin = age 22, male
+Tori = age 19, female
+Koen = age 20, male
+Tyree = age 18, male
