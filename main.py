@@ -112,7 +112,6 @@ the forest made it seem as if it were closer.
         print('You are left behind as they head to the mount. Days later you die from hunger.')
     else:
         quit()
-
 def headingToMount():
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
     print('You follow them to the mountain. Tyreen had managed to estimate the time using the sun and he said it was around 5 o\'clock meaning that it had been over two hours since they first started walking')
@@ -235,14 +234,8 @@ Tyree screams and falls back as a pale white man jumps from inside the small boa
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ''')
 
-    print('"It\'ll be a simple math game. I\'ll have my friend think of two equations, each one having the answer from the previous equation." The man explained.')
-    print('"For example, their first equation can be one plus one whih of course is two, their second equation can be two times four and so on and so forth. Understand?" the man asked. They all shook their head.')
-    print('"Whoever gets the most correct wins, however if you get the last questions right you win the entire game no matter how many points you or the oppenent has." The man explained.')
-    print('"Just get the last one correct no need to try for the first few." Tori whispered.')
-    print('You nodded, your plan was exactly that.')
-    print('The man pulled out a creature from his coat. It was a dwarf, at least it looked like one to you. Except it was incredily small, the size of a puppy.')
-    print('"Did you hear that? Now get started with them equations!" the man said putting the dwarf creature down. The dwarf coughed and began to say the equations.')
-
+    print('"It\'ll be a simple game. My friend here will give us a random number and then give us a number based on our surroundings. He\'ll then tell us to multiply them and if you get it right within 5 seconds you win." The man said.')
+    print('The man pulled out a small person, he seemed like a dwarf, out of his jacket and placed him on the ground.')
     from random import randint
     print uniform(1, 10)
 
@@ -251,13 +244,7 @@ Tyree screams and falls back as a pale white man jumps from inside the small boa
     if firstanswer == mul:
         print('"Correct"')
     else:
-        print('"Incorrect"')
-
-
-
-
-
-
+        print('"Incorrect."')
 
 def continuedFirstPath():
 
