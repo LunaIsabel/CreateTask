@@ -32,7 +32,7 @@ What do you do?
 Please type out 1 or 2.
         ''')
     path = input('')
-    if path == ('1'):
+    if path == '1':
         continuationFirstPath()
     else:
         continuedFirstPath()
@@ -103,15 +103,14 @@ the forest made it seem as if it were closer.
 "Alright let's start moving then. Everyone in?" Tyreen said, looking at you.
 
     ''')
-    YesorNo = ['yes', 'no']
-    responseTori = ''
-    responseTori = input('"Are you in, yes or no?" Tori asked.')
+    responseTori = input('"Are you in, yes or no?" Tori asked.').lower()
     if responseTori == 'yes':
         headingToMount()
     elif responseTori == 'no':
         print('You are left behind as they head to the mount. Days later you die from hunger.')
     else:
-        quit()
+        exit()
+
 def headingToMount():
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
     print('You follow them to the mountain. Tyreen had managed to estimate the time using the sun and he said it was around 5 o\'clock meaning that it had been over two hours since they first started walking')
@@ -123,8 +122,8 @@ def headingToMount():
     print('Who do you sleep next to?')
     people = ['tori', 'koen', 'tyree', 'kevin']
     responsePeople = input('')
-    if not responsePeople in people:
-        print('Who do sleep next to? ')
+    if responsePeople.lower() not in people:
+        print('Who do you sleep next to? ')
     else:
         print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         print('The following morning you wake up next to ' + responsePeople)
@@ -133,7 +132,6 @@ def headingToMount():
     print('Tyree updated everyone everytime a new hour came by. It was around the third hour of walking when you all came across two paths.')
     print('To the left the path seemed to go down a small hill where the trees covered the rest and on the right the path just stretched onto the forest.')
     print('"Which one do we take?" Tori asked. They all gave each other looks and then look back to you')
-    RightLeft = ['right', 'left']
     answerRL = input('')
     if answerRL == 'left':
         print('You point left and begin to lead the group down the small incline.')
@@ -143,7 +141,6 @@ def headingToMount():
         time.sleep(3)
         print('As you walk carefully through the forest you hear a large growl. Suddenly a beast rises from the bushes. A black bear stands right above you.')
         print('What do you do, Run back or Play dead?')
-        bearfight = ['run back', 'play dead']
         answerbear = input('')
         if answerbear == 'run back':
             print('You succesfully run away down the left path, leaving the bear behind.')
@@ -167,20 +164,22 @@ def toLake():
     print('')
     print('1. "So any sports you into?"')
     print('2. "What do you think of all this?"')
-    toriTalk = ['1', '2']
-    toriTalkAnswerM = input('')
-    if toriTalkAnswerM == '1':
-        print('"Well from what I can remember I did like lacrosse. But I think I\'m more of a bookworm to be honest. And given my height I can\'t do many sports." Tori giggled.')
-        print('"If you don\'t mind me asking...How tall are you?" You ask politely already breaking into a cold sweat.')
-        print('"Only five one. I\'m a midget!" She continued to giggle.')
-        print('You give a small chuckle, "Heh, that\'s adorable though."')
-        print('Her face turns red as she looks away. You immediately regret saying that.')
-    elif toriTalkAnswerM == '2':
-        print('It\'s crazy honestly, but also very scary. I\'m terrified couldn\'t really sleep at night. I just want to get home.')
-        print('You give a slight nod and say, "Yeah same, I don\'t like admitting it but I am scared. But hey I know we\'ll find a way to get home."')
-        print('She looks up to you and gives you a beautiful smile. Your heart begins to race.')
-    else:
-        print('What do you want to ask Tori? 1 or 2?')
+    while True:
+        toriTalkAnswerM = input('')
+        if toriTalkAnswerM == '1':
+            print('"Well from what I can remember I did like lacrosse. But I think I\'m more of a bookworm to be honest. And given my height I can\'t do many sports." Tori giggled.')
+            print('"If you don\'t mind me asking...How tall are you?" You ask politely already breaking into a cold sweat.')
+            print('"Only five one. I\'m a midget!" She continued to giggle.')
+            print('You give a small chuckle, "Heh, that\'s adorable though."')
+            print('Her face turns red as she looks away. You immediately regret saying that.')
+            break
+        elif toriTalkAnswerM == '2':
+            print('It\'s crazy honestly, but also very scary. I\'m terrified couldn\'t really sleep at night. I just want to get home.')
+            print('You give a slight nod and say, "Yeah same, I don\'t like admitting it but I am scared. But hey I know we\'ll find a way to get home."')
+            print('She looks up to you and gives you a beautiful smile. Your heart begins to race.')
+            break
+        else:
+            print('What do you want to ask Tori? 1 or 2?')
     print('''
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You both make your way down to a lake where the guys had already begun to splash around. Tori quickly follows them, pulling up her sleeves and pants. You look around and spot something to your left. It appears
@@ -234,17 +233,24 @@ Tyree screams and falls back as a pale white man jumps from inside the small boa
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ''')
 
-    print('"It\'ll be a simple game. My friend here will give us a random number and then give us a number based on our surroundings. He\'ll then tell us to multiply them and if you get it right within 5 seconds you win." The man said.')
-    print('The man pulled out a small person, he seemed like a dwarf, out of his jacket and placed him on the ground.')
+    print('"It\'ll be a simple math game. I\'ll have my friend think of two equations, each one having the answer from the previous equation." The man explained.')
+    print('"For example, their first equation can be one plus one whih of course is two, their second equation can be two times four and so on and so forth. Understand?" the man asked. They all shook their head.')
+    print('"Whoever gets the most correct wins, however if you get the last questions right you win the entire game no matter how many points you or the oppenent has." The man explained.')
+    print('"Just get the last one correct no need to try for the first few." Tori whispered.')
+    print('You nodded, your plan was exactly that.')
+    print('The man pulled out a creature from his coat. It was a dwarf, at least it looked like one to you. Except it was incredily small, the size of a puppy.')
+    print('"Did you hear that? Now get started with them equations!" the man said putting the dwarf creature down. The dwarf coughed and began to say the equations.')
+
     from random import randint
-    print uniform(1, 10)
+    firstnumber = randint(1, 10)
 
     mul = firstnumber * 12
     firstanswer = input('')
     if firstanswer == mul:
         print('"Correct"')
     else:
-        print('"Incorrect."')
+        print('"Incorrect"')
+
 
 def continuedFirstPath():
 
@@ -310,15 +316,13 @@ the forest made it seem as if it were closer.
 "Alright let's start moving then. Everyone in?" Tyreen said, looking at you.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ''')
-    YesorNo = ['yes', 'no']
-    responseTori = ''
     responseTori = input('"Are you in, yes or no?" Tori asked.')
     if responseTori == 'yes':
         headingToMount()
     elif responseTori == 'no':
         print('You are left behind as they head to the mount. Days later you die from hunger.')
     else:
-        quit()
+        exit()
 
 def story_female(name):
     print('''
@@ -405,15 +409,14 @@ the forest made it seem as if it were closer.
 "Alright let's start moving then. Everyone in?" Tyreen said, looking at you.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ''')
-    YesorNo = ['yes', 'no']
-    responseTori = ''
     responseTori = input('"Are you in, yes or no?" Tori asked.')
     if responseTori == 'yes':
         headingToMountF()
     elif responseTori == 'no':
         print('You are left behind as they head to the mount. Days later you die from hunger.')
     else:
-        quit()
+        exit()
+
 def headingToMountF():
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
     print('You follow them to the mountain. Tyreen had managed to estimate the time using the sun and he said it was around 5 o\'clock meaning that it had been over two hours since they first started walking')
@@ -425,7 +428,7 @@ def headingToMountF():
     print('Who do you sleep next to?')
     people = ['tori', 'koen', 'tyree', 'kevin']
     responsePeople = input('')
-    if not responsePeople in people:
+    if responsePeople not in people:
         print('Who do sleep next to? ')
     else:
         print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
@@ -435,7 +438,6 @@ def headingToMountF():
     print('Tyree updated everyone everytime a new hour came by. It was around the third hour of walking when you all came across two paths.')
     print('To the left the path seemed to go down a small hill where the trees covered the rest and on the right the path just stretched onto the forest.')
     print('"Which one do we take?" Tori asked. They all gave each other looks and then look back to you')
-    RightLeft = ['right', 'left']
     answerRL = input('')
     if answerRL == 'left':
         print('You point left and begin to lead the group down the small incline.')
@@ -458,6 +460,7 @@ def headingToMountF():
             print('What do you do, Run back or play dead?')
     else:
         print('Choose, left or right.')
+
 def toLakeF():
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
     print('You all scurry down the hill and begin to smell a nice auroma that reminds you of the beach. As you all head down the path the smell gets stronger and then you begin to hear noises.')
@@ -468,7 +471,6 @@ def toLakeF():
     print('')
     print('1. "So any sports you into?"')
     print('2. "Like any of \'em?"')
-    toriTalk = ['1', '2']
     toriTalkAnswer = input('')
     if toriTalkAnswer == '1':
         print('"Well from what I can remember I did like lacrosse. But I think I\'m more of a bookworm to be honest. And given my height I can\'t do many sports." Tori giggled.')
@@ -479,7 +481,6 @@ def toLakeF():
         print('"Oh dear god no! I\'ve only known them for a day or so." Tori said. "Why who do you like? No one?"')
         print('')
         print('Type the name of the guy you have interest for from the story. If you can\'t think of someone say no one.')
-        boyLike = ['tyree', 'koen', 'kevin', 'no one']
         boyYouLike = input('')
         if boyYouLike == 'tyree':
             print('"Oh I can totally see why. He\'s quite the handsome man himself." Tori smiled.')
@@ -487,7 +488,7 @@ def toLakeF():
             print('"Aw, he\'s a sweetie pie honestly. I can totally see why."')
         elif boyYouLike == 'kevin':
             print('"Oh you like bad boys huh? He\'s hilarious let me give you that!"')
-        elif boyYouLike == 'no one':
+        else:
             print('"Ah yes, we still need to get to know them. They are all pretty nice though." Tori shrugged with a smile.')
     else:
         print('What do you want to ask Tori? 1 or 2?')
@@ -610,15 +611,13 @@ the forest made it seem as if it were closer.
 "Alright let's start moving then. Everyone in?" Tyreen said, looking at you.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ''')
-    YesorNo = ['yes', 'no']
-    responseTori = ''
     responseTori = input('"Are you in, yes or no?" Tori asked.')
     if responseTori == 'yes':
         headingToMountF()
     elif responseTori == 'no':
         print('You are left behind as they head to the mount. Days later you die from hunger.')
     else:
-        quit()
+        exit()
 
 if __name__ == '__main__':
     name = question_name()
@@ -627,3 +626,4 @@ if __name__ == '__main__':
         story_male(name)
     elif gender == 'female':
         story_female(name)
+
