@@ -3,6 +3,8 @@ __copyright__ = "Copyright (c) 2019 Isabel Luna"
 __credits__ = ["Luna, Isabel"]
 __license__ = "MIT lisence"
 
+import time
+
 def endings():
     ending1 = 'You died'
 
@@ -21,6 +23,8 @@ def question_gender():
     print('Are you female or male?')
     gender = input('')
     return gender
+
+
 
 def story_male(name):
     print('''
@@ -95,8 +99,151 @@ You remembered why you stopped trying on your looks, it was when your ex had dum
 and stand next to them in the circle. You do your best to look behind you and notice all the puzzle pieces seem to fit with each other. Yours fit with Tori and Kevin's which made you feel foolish pride.
 
 "What even is this? Oh dude my mom's gonna kill me." Koen frowned.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+"What if this is an experiment?" Tori asked, putting her shirt down.
+
+"Well this is pretty messed up. But if it is then they obviously want us to do something. Prove something." Tyree said running his fingers on his lips.
+
+"Whatever look at where we are, we're in the middle of nowhere. All I see is grass grass grass. Wait" Koen stopped suddenly and pointed behind Kevin. There was a mountain with a forest surrounding it. Although it was extrememly far away
+the forest made it seem as if it were closer.
+
+"That's our best shot at finding anything. I can't see anything else." Tori suggested.
+
+"Alright let's start moving then. Everyone in?" Tyreen said, looking at you.
+
     ''')
+    YesorNo = ['yes', 'no']
+    responseTori = ''
+    responseTori = input('"Are you in, yes or no?" Tori asked.')
+    if responseTori == 'yes':
+        headingToMount()
+    elif responseTori == 'no':
+        print('You are left behind as they head to the mount. Days later you die from hunger.')
+    else:
+        quit()
+
+def headingToMount():
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    print('You follow them to the mountain. Tyreen had managed to estimate the time using the sun and he said it was around 5 o\'clock meaning that it had been over two hours since they first started walking')
+    print('After hours of walking the sun began to fall and night was approaching.')
+    print('The five of you agree to continue since you could already see the forest up ahead. Koen had mentioned that there might be "creatures" there that they don\'t know of. You agreed with Tori to sout the area once you got there and set up camp.')
+    print('After arriving at the edge of the forest you and Tyreen walk a number of meters away and come back telling everyone it\'d be safe for now.')
+    print('You all help bring supplies to Koen who had begun to form a fire and contain it.')
+    print('Everyone eventually begins to go to sleep.')
+    print('Who do you sleep next to?')
+    people = ['tori', 'koen', 'tyree', 'kevin']
+    responsePeople = input('')
+    if not responsePeople in people:
+        print('Who do sleep next to? ')
+    else:
+        print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        print('The following morning you wake up next to ' + responsePeople)
+    print('You all begint to walk into the forest and begin to notice many small animals. You\'ve been walking with ' + responsePeople)
+    print('And somehow that\'s made you feel safer while walking.')
+    print('Tyree updated everyone everytime a new hour came by. It was around the third hour of walking when you all came across two paths.')
+    print('To the left the path seemed to go down a small hill where the trees covered the rest and on the right the path just stretched onto the forest.')
+    print('"Which one do we take?" Tori asked. They all gave each other looks and then look back to you')
+    RightLeft = ['right', 'left']
+    answerRL = input('')
+    if answerRL == 'left':
+        print('You point left and begin to lead the group down the small incline.')
+        toLake()
+    elif answerRL == 'right':
+        print('You begin to walk down the right path as the others follow close behind.')
+        time.sleep(3)
+        print('As you walk carefully through the forest you hear a large growl. Suddenly a beast rises from the bushes. A black bear stands right above you.')
+        print('What do you do, Run back or Play dead?')
+        bearfight = ['run back', 'play dead']
+        answerbear = input('')
+        if answerbear == 'run back':
+            print('You succesfully run away down the left path, leaving the bear behind.')
+            toLake()
+        elif answerbear == 'play dead':
+                print('You play dead and hope the bear just goes away.')
+                time.sleep(3)
+                print('However the bear is too smart for that and begins to eat its free meal.')
+        else:
+            print('What do you do, Run back or play dead?')
+    else:
+        print('Choose, left or right.')
+
+def toLake():
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    print('You all scurry down the hill and begin to smell a nice auroma that reminds you of the beach. As you all head down the path the smell gets stronger and then you begin to hear noises.')
+    print('You hear water crash against rocks but very faintly.')
+    print('Koen begins to run to the sound, you all follow behind except Tori')
+    print('You decide to stay behind with Tori')
+    print('You use this oppurtunity to try and get close.')
+    print('')
+    print('1. "So any sports you into?"')
+    print('2. "What do you think of all this?"')
+    toriTalk = ['1', '2']
+    toriTalkAnswerM = input('')
+    if toriTalkAnswerM == '1':
+        print('"Well from what I can remember I did like lacrosse. But I think I\'m more of a bookworm to be honest. And given my height I can\'t do many sports." Tori giggled.')
+        print('"If you don\'t mind me asking...How tall are you?" You ask politely already breaking into a cold sweat.')
+        print('"Only five one. I\'m a midget!" She continued to giggle.')
+        print('You give a small chuckle, "Heh, that\'s adorable though."')
+        print('Her face turns red as she looks away. You immediately regret saying that.')
+    elif toriTalkAnswerM == '2':
+        print('It\'s crazy honestly, but also very scary. I\'m terrified couldn\'t really sleep at night. I just want to get home.')
+        print('You give a slight nod and say, "Yeah same, I don\'t like admitting it but I am scared. But hey I know we\'ll find a way to get home."')
+        print('She looks up to you and gives you a beautiful smile. Your heart begins to race.')
+    else:
+        print('What do you want to ask Tori? 1 or 2?')
+    print('''
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You both make your way down to a lake where the guys had already begun to splash around. Tori quickly follows them, pulling up her sleeves and pants. You look around and spot something to your left. It appears
+to be a small boat with a long lantern on it.
+
+"Hey you guys, there's a boat over there!" You shout. They all turn to the left and examine the boat. Tyree begins to walk toward it, stepping out of the water and putting his shoes back on.
+
+"Be careful..." Tori mumbled. You all follow closely behind. Your heart begins to pump faster and you notice Tori has wrapped her arms around you. Your heart goes crazy with all these emotions and you can feel your face turn red.
+''')
+    time.sleep(10)
+    print('''
+Tyree screams and falls back as a pale white man jumps from inside the small boat.
+
+"HIIIIYAHHH~!" The man screams, in a poor fighting stance. You all let out a scream and go back. "You'll never eat me you monsters!" The man began to wave the lamp around.
+
+"HEY we're good!" Tyree got up, trying to dodge the lamp.
+
+"That's what they all say and then the next thing I know you've eaten my grandmother." The man said aggresively.
+
+"What the - No look we don't know where we are we just need help getting back to where we came from. Do you know if there's a city nearby to call the cops?" Tyree explained.
+
+"Cops? are you foreigners? The only city near here is the elves' but that's in the mountain and considering the war going on right now you are not getting anywhere near there." The man chuckled still waving the lamp around.
+
+"Can you put that down. What are you talking about? War? There's no war dude." Kevin said.
+
+"Well yes there is. It's been going on for almost five years you foreigners." The man shook his head. "You ain't getting anymore information out of me. You won't! Never!" The man yelled.
+
+"What a lunatic..." Tori laughed quietly. You looked down at her and she was holding in laughter.
+
+"Can you tell us what planet this is?" Koen asked.
+
+"Planet? What strange language do you use you foreigner?" The man asked.
+
+"Planet. Like Earth? Are we on Earth?" Koen said.
+
+"Well of course you're not on Earth. That's not a planet ya bimbo. It's a celestial body, but no this is Scorux." The man chuckled.
+
+"Obviously we're not on Earth anymore then. Damn it." Koen said. "Could someone in the city help us get back to Earth?"
+
+"Probably but you ain't getting there anytime soon. Not without me that is." The man smiled.
+
+"Can you take us there? We don't have much but once we get back on our feet we promise to help you with whatever you want." Tori said walking toward the man.
+
+"Ah well I would like to play a game . It's been so long. If you beat me I'll give you a ride on my boat to a large city where they could help you. If not then I'll just leave ya here." The man suggested.
+
+"Deal. Who wants to play?" Tori asked the group. They all shrugged obviusly not wanting to play.
+
+"I'll do it." You say, walking toward the man confidently trying to impress Tori.
+
+"Good let's begin." He said.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+''')
+
 
 def continuedFirstPath():
 
@@ -149,8 +296,28 @@ You remembered why you stopped trying on your looks, it was when your ex had dum
 and stand next to them in the circle. You do your best to look behind you and notice all the puzzle pieces seem to fit with each other. Yours fit with Tori and Kevin's which made you feel foolish pride.
 
 "What even is this? Oh dude my mom's gonna kill me." Koen frowned.
+
+"What if this is an experiment?" Tori asked, putting her shirt down.
+
+"Well this is pretty messed up. But if it is then they obviously want us to do something. Prove something." Tyree said running his fingers on his lips.
+
+"Whatever look at where we are, we're in the middle of nowhere. All I see is grass grass grass. Wait" Koen stopped suddenly and pointed behind Kevin. There was a mountain with a forest surrounding it. Although it was extrememly far away
+the forest made it seem as if it were closer.
+
+"That's our best shot at finding anything. I can't see anything else." Tori suggested.
+
+"Alright let's start moving then. Everyone in?" Tyreen said, looking at you.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ''')
+    YesorNo = ['yes', 'no']
+    responseTori = ''
+    responseTori = input('"Are you in, yes or no?" Tori asked.')
+    if responseTori == 'yes':
+        headingToMount()
+    elif responseTori == 'no':
+        print('You are left behind as they head to the mount. Days later you die from hunger.')
+    else:
+        quit()
 
 def story_female(name):
     print('''
@@ -167,11 +334,11 @@ def story_female(name):
     ''')
     path = input('')
     if path == ('1'):
-        continuationFirstPath()
+        firstPathF()
     else:
-        continuedFirstPath()
+        secondPathF()
 
-def continuationFirstPath():
+def firstPathF():
     print('''
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You struggle to get up. The pain in your back seems to be diminishing, however as you manage to find your balance your legs
@@ -224,10 +391,161 @@ You'll probably ask her later just to confirm and it'd serve as good small talk.
 making sure not to expose the front. You walked closer to them in the circle. You do your best to look behind you and notice all the puzzle pieces seem to fit with each other. Yours fit with Tori and Kevin's which made you feel foolish pride.
 
 "What even is this? Oh dude my mom's gonna kill me." Koen frowned.
+
+"What if this is an experiment?" Tori asked, putting her shirt down.
+
+"Well this is pretty messed up. But if it is then they obviously want us to do something. Prove something." Tyree said running his fingers on his lips.
+
+"Whatever look at where we are, we're in the middle of nowhere. All I see is grass grass grass. Wait" Koen stopped suddenly and pointed behind Kevin. There was a mountain with a forest surrounding it. Although it was extrememly far away
+the forest made it seem as if it were closer.
+
+"That's our best shot at finding anything. I can't see anything else." Tori suggested.
+
+"Alright let's start moving then. Everyone in?" Tyreen said, looking at you.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ''')
+    YesorNo = ['yes', 'no']
+    responseTori = ''
+    responseTori = input('"Are you in, yes or no?" Tori asked.')
+    if responseTori == 'yes':
+        headingToMountF()
+    elif responseTori == 'no':
+        print('You are left behind as they head to the mount. Days later you die from hunger.')
+    else:
+        quit()
+def headingToMountF():
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    print('You follow them to the mountain. Tyreen had managed to estimate the time using the sun and he said it was around 5 o\'clock meaning that it had been over two hours since they first started walking')
+    print('After hours of walking the sun began to fall and night was approaching.')
+    print('The five of you agree to continue since you could already see the forest up ahead. Koen had mentioned that there might be "creatures" there that they don\'t know of. You agreed with Tori to sout the area once you got there and set up camp.')
+    print('After arriving at the edge of the forest you and Tyreen walk a number of meters away and come back telling everyone it\'d be safe for now.')
+    print('You all help bring supplies to Koen who had begun to form a fire and contain it.')
+    print('Everyone eventually begins to go to sleep.')
+    print('Who do you sleep next to?')
+    people = ['tori', 'koen', 'tyree', 'kevin']
+    responsePeople = input('')
+    if not responsePeople in people:
+        print('Who do sleep next to? ')
+    else:
+        print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        print('The following morning you wake up next to ' + responsePeople)
+    print('You all begint to walk into the forest and begin to notice many small animals. You\'ve been walking with ' + responsePeople)
+    print('And somehow that\'s made you feel safer while walking.')
+    print('Tyree updated everyone everytime a new hour came by. It was around the third hour of walking when you all came across two paths.')
+    print('To the left the path seemed to go down a small hill where the trees covered the rest and on the right the path just stretched onto the forest.')
+    print('"Which one do we take?" Tori asked. They all gave each other looks and then look back to you')
+    RightLeft = ['right', 'left']
+    answerRL = input('')
+    if answerRL == 'left':
+        print('You point left and begin to lead the group down the small incline.')
+        toLakeF()
+    elif answerRL == 'right':
+        print('You begin to walk down the right path as the others follow close behind.')
+        time.sleep(3)
+        print('As you walk carefully through the forest you hear a large growl. Suddenly a beast rises from the bushes. A black bear stands right above you.')
+        print('What do you do, Run back or Play dead?')
+        bearfight = ['run back', 'play dead']
+        answerbear = input('')
+        if answerbear == 'run back':
+            print('You succesfully run away down the left path, leaving the bear behind.')
+            toLake()
+        elif answerbear == 'play dead':
+                print('You play dead and hope the bear just goes away.')
+                time.sleep(3)
+                print('However the bear is too smart for that and begins to eat its free meal.')
+        else:
+            print('What do you do, Run back or play dead?')
+    else:
+        print('Choose, left or right.')
+def toLakeF():
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    print('You all scurry down the hill and begin to smell a nice auroma that reminds you of the beach. As you all head down the path the smell gets stronger and then you begin to hear noises.')
+    print('You hear water crash against rocks but very faintly.')
+    print('Koen begins to run to the sound, you all follow behind except Tori')
+    print('You decide to stay behind with Tori')
+    print('You use this oppurtunity to try and get close. What do you say?')
+    print('')
+    print('1. "So any sports you into?"')
+    print('2. "Like any of \'em?"')
+    toriTalk = ['1', '2']
+    toriTalkAnswer = input('')
+    if toriTalkAnswer == '1':
+        print('"Well from what I can remember I did like lacrosse. But I think I\'m more of a bookworm to be honest. And given my height I can\'t do many sports." Tori giggled.')
+        print('"I think we might be the same height. How tall are you?" You ask politely.')
+        print('"Only five one. I\'m a midget!" She continued to giggle.')
+        print('"Same!" You begin to laugh with her.')
+    elif toriTalkAnswer == '2':
+        print('"Oh dear god no! I\'ve only known them for a day or so." Tori said. "Why who do you like? No one?"')
+        print('')
+        print('Type the name of the guy you have interest for from the story. If you can\'t think of someone say no one.)
+        boyLike = ['tyree', 'koen', 'kevin', 'no one']
+        boyYouLike = input('')
+        if boyYouLike == 'tyree':
+            print('"Oh I can totally see why. He\'s quite the handsome man himself." Tori smiled.')
+        elif boyYouLike == 'koen':
+            print('"Aw, he\'s a sweetie pie honestly. I can totally see why."')
+        elif boyYouLike == 'kevin':
+            print('"Oh you like bad boys huh? He\'s hilarious let me give you that!"')
+        elif boyYouLike == 'no one':
+            print('"Ah yes, we still need to get to know them. They are all pretty nice though." Tori shrugged with a smile.')
+    else:
+        print('What do you want to ask Tori? 1 or 2?')
+    print('''
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You both make your way down to a lake where the guys had already begun to splash around. Tori quickly follows them, pulling up her sleeves and pants. You look around and spot something to your left. It appears
+to be a small boat with a long lantern on it.
+
+"Hey you guys, there's a boat over there!" You shout. They all turn to the left and examine the boat. Tyree begins to walk toward it, stepping out of the water and putting his shoes back on.
+
+"Be careful..." Tori mumbled. You all follow closely behind. Your heart begins to pump faster and you notice Tori and you had your arms wrapped together in complete fear.
+    ''')
+    time.sleep(10)
+    print('''
+Tyree screams and falls back as a pale white man jumps from inside the small boat.
+
+"HIIIIYAHHH~!" The man screams, in a poor fighting stance. You all let out a scream and go back. "You'll never eat me you monsters!" The man began to wave the lamp around.
+
+"HEY we're good!" Tyree got up, trying to dodge the lamp.
+
+"That's what they all say and then the next thing I know you've eaten my grandmother." The man said aggresively.
+
+"What the - No look we don't know where we are we just need help getting back to where we came from. Do you know if there's a city nearby to call the cops?" Tyree explained.
+
+"Cops? are you foreigners? The only city near here is the elves' but that's in the mountain and considering the war going on right now you are not getting anywhere near there." The man chuckled still waving the lamp around.
+
+"Can you put that down. What are you talking about? War? There's no war dude." Kevin said.
+
+"Well yes there is. It's been going on for almost five years you foreigners." The man shook his head. "You ain't getting anymore information out of me. You won't! Never!" The man yelled.
+
+"What a lunatic..." Tori laughed quietly. You looked down at her and she was holding in laughter.
+
+"Can you tell us what planet this is?" Koen asked.
+
+"Planet? What strange language do you use you foreigner?" The man asked.
+
+"Planet. Like Earth? Are we on Earth?" Koen said.
+
+"Well of course you're not on Earth. That's not a planet ya bimbo. It's a celestial body, but no this is Scorux." The man chuckled.
+
+"Obviously we're not on Earth anymore then. Damn it." Koen said. "Could someone in the city help us get back to Earth?"
+
+"Probably but you ain't getting there anytime soon. Not without me that is." The man smiled.
+
+"Can you take us there? We don't have much but once we get back on our feet we promise to help you with whatever you want." Tori said walking toward the man.
+
+"Ah well I would like to play a game . It's been so long. If you beat me I'll give you a ride on my boat to a large city where they could help you. If not then I'll just leave ya here." The man suggested.
+
+"Deal. Who wants to play?" Tori asked the group. They all shrugged obviusly not wanting to play.
+
+"I'll do it." You say, walking toward the man confidently.
+
+"Good let's begin." He said.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ''')
 
-def continuedFirstPath():
+
+
+def secondPathF():
 
     print('''
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -278,15 +596,33 @@ You'll probably ask her later just to confirm and it'd serve as good small talk.
 making sure not to expose the front. You walked closer to them in the circle. You do your best to look behind you and notice all the puzzle pieces seem to fit with each other. Yours fit with Tori and Kevin's which made you feel foolish pride.
 
 "What even is this? Oh dude my mom's gonna kill me." Koen frowned.
+
+"What if this is an experiment?" Tori asked, putting her shirt down.
+
+"Well this is pretty messed up. But if it is then they obviously want us to do something. Prove something." Tyree said running his fingers on his lips.
+
+"Whatever look at where we are, we're in the middle of nowhere. All I see is grass grass grass. Wait" Koen stopped suddenly and pointed behind Kevin. There was a mountain with a forest surrounding it. Although it was extrememly far away
+the forest made it seem as if it were closer.
+
+"That's our best shot at finding anything. I can't see anything else." Tori suggested.
+
+"Alright let's start moving then. Everyone in?" Tyreen said, looking at you.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ''')
-
-
+    YesorNo = ['yes', 'no']
+    responseTori = ''
+    responseTori = input('"Are you in, yes or no?" Tori asked.')
+    if responseTori == 'yes':
+        headingToMountF()
+    elif responseTori == 'no':
+        print('You are left behind as they head to the mount. Days later you die from hunger.')
+    else:
+        quit()
 
 if __name__ == '__main__':
     name = question_name()
     gender = question_gender();
     if gender == 'male':
         story_male(name)
-    else:
+    elif gender == 'female':
         story_female(name)
