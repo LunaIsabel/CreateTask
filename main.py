@@ -5,15 +5,6 @@ __license__ = "MIT lisence"
 
 import time
 
-def endings():
-    ending1 = 'You died'
-
-    ending2 = 'You become hero'
-    ending3 = 'Live ordinary life'
-    ending_list = [ending1, ending2, ending3]
-    chosen_ending = random.choice(ending_list)
-    print(chosen_ending)
-
 def question_name():
     print('What\'s your name?')
     name = input(' ')
@@ -243,6 +234,29 @@ Tyree screams and falls back as a pale white man jumps from inside the small boa
 "Good let's begin." He said.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ''')
+
+    print('"It\'ll be a simple math game. I\'ll have my friend think of two equations, each one having the answer from the previous equation." The man explained.')
+    print('"For example, their first equation can be one plus one whih of course is two, their second equation can be two times four and so on and so forth. Understand?" the man asked. They all shook their head.')
+    print('"Whoever gets the most correct wins, however if you get the last questions right you win the entire game no matter how many points you or the oppenent has." The man explained.')
+    print('"Just get the last one correct no need to try for the first few." Tori whispered.')
+    print('You nodded, your plan was exactly that.')
+    print('The man pulled out a creature from his coat. It was a dwarf, at least it looked like one to you. Except it was incredily small, the size of a puppy.')
+    print('"Did you hear that? Now get started with them equations!" the man said putting the dwarf creature down. The dwarf coughed and began to say the equations.')
+
+    from random import randint
+    print uniform(1, 10)
+
+    mul = firstnumber * 12
+    firstanswer = input('')
+    if firstanswer == mul:
+        print('"Correct"')
+    else:
+        print('"Incorrect"')
+
+
+
+
+
 
 
 def continuedFirstPath():
@@ -477,7 +491,7 @@ def toLakeF():
     elif toriTalkAnswer == '2':
         print('"Oh dear god no! I\'ve only known them for a day or so." Tori said. "Why who do you like? No one?"')
         print('')
-        print('Type the name of the guy you have interest for from the story. If you can\'t think of someone say no one.)
+        print('Type the name of the guy you have interest for from the story. If you can\'t think of someone say no one.')
         boyLike = ['tyree', 'koen', 'kevin', 'no one']
         boyYouLike = input('')
         if boyYouLike == 'tyree':
